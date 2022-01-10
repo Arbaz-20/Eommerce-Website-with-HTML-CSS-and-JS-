@@ -13,21 +13,31 @@
 
 <body>
 
+
+
     <section id="header">
         <a href="#">
             <img src="img/logo.png" class="logo">
         </a>
-        <div id="navbar">
-            <ul>
+        <div>
+            <ul id="navbar">
                 <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <li>
+                    <a href="cart.html"> <img class="image" src="img/cart.png" width="30px" height="30px"></a>
+                </li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
         </div>
+        <div id="mobile">
+            <a href="cart.html"> <img class="image" src="img/cart.png" width="30px" height="30px"></a>
+            <img id="menu" class="bar" src="img/menu.png" width="30px" height="30px">
+        </div>
     </section>
+
 
     <section id="hero">
         <h4>Trade-in-Offer</h4>
@@ -36,6 +46,8 @@
         <p>Save more with coupons and up to 70% off!</p>
         <button>ShopNow</button>
     </section>
+
+
 
     <section id="feature" class="section-p1">
         <div class="feature-box">
@@ -63,6 +75,9 @@
             <h6>F24/7 Support</h6>
         </div>
     </section>
+
+
+
 
     <section id="product1" class="section-p1">
         <h2>Featured Products</h2>
@@ -195,11 +210,15 @@
         </div>
     </section>
 
+
     <section id="banner" class="section-m1">
         <h4>Repair Service</h4>
         <h2>Upto <span>70% off</span> - All T-Shirt & Accessories</h2>
         <button class="normal">Explore More</button>
     </section>
+
+
+
 
     <section id="product1" class="section-p1">
         <h2>New Arrivals</h2>
@@ -332,6 +351,8 @@
         </div>
     </section>
 
+
+
     <section id="sm-banner" class="section-p1">
         <div class="banner-box">
             <h4>crazy deals</h4>
@@ -374,6 +395,10 @@
             <button class="normal">Sign Up</button>
         </div>
     </section>
+
+
+
+
 
     <footer class="section-p1">
 
@@ -425,6 +450,29 @@
             <p>@ 2021, Tech2 etc - HTML CSS Ecommerce Template</p>
         </div>
     </footer>
+
+
+
+
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('navbar');
+
+        menu.onclick = function() {
+            if (nav.style.right == "-300px") {
+                nav.style.right = "0px";
+            } else {
+                nav.style.right = "-300px";
+            }
+        }
+
+        var close = document.getElementById('close');
+        close.onclick = function() {
+            if (nav.style.right == "0px") {
+                nav.style.right = "-300px";
+            }
+        }
+    </script>
 
 </body>
 

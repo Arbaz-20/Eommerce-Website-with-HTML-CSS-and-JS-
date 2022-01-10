@@ -17,17 +17,28 @@
         <a href="#">
             <img src="img/logo.png" class="logo">
         </a>
-        <div id="navbar">
-            <ul>
+        <div>
+            <ul id="navbar">
                 <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <li>
+                    <a href="cart.html"> <img class="image" src="img/cart.png" width="30px" height="30px"></a>
+                </li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
         </div>
+        <div id="mobile">
+            <a href="cart.html"> <img class="image" src="img/cart.png" width="30px" height="30px"></a>
+            <img id="menu" class="bar" src="img/menu.png" width="30px" height="30px">
+        </div>
     </section>
+
+
+
+
 
     <footer class="section-p1">
 
@@ -80,7 +91,26 @@
         </div>
     </footer>
 
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('navbar');
 
+        menu.onclick = function() {
+            if (nav.style.right == "-300px") {
+                nav.style.right = "0px";
+            } else {
+                nav.style.right = "-300px";
+            }
+        }
+
+        var close = document.getElementById('close');
+
+        close.onclick = function() {
+            if (nav.style.right == "0px") {
+                nav.style.right = "-300px";
+            }
+        }
+    </script>
 
 </body>
 
