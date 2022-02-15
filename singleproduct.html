@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-    <title>About</title>
+    <script src="js/script.js"></script>
+    <title>Home</title>
 </head>
 
 <body>
@@ -18,10 +19,10 @@
         </a>
         <div>
             <ul id="navbar">
-                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li>
                     <a href="cart.html"> <img class="image" src="img/cart.png" width="30px" height="30px"></a>
@@ -35,9 +36,17 @@
         </div>
     </section>
 
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign up for NewsLetters</h4>
+            <p>Get E-mail updates about our shop and <span>special offers</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your Email Address">
 
-
-
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
 
     <footer class="section-p1">
 
@@ -103,7 +112,6 @@
         }
 
         var close = document.getElementById('close');
-
         close.onclick = function () {
             if (nav.style.right == "0px") {
                 nav.style.right = "-300px";
