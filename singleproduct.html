@@ -36,6 +36,120 @@
         </div>
     </section>
 
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="img/products/f1.jpg" width="100%" id="MainImg">
+
+            <div class="small-image-group">
+                <div class="small-image-col">
+                    <img src="img/products/f1.jpg" width="100%" alt="" class="small-img">
+                </div>
+
+                <div class="small-image-col">
+                    <img src="img/products/f2.jpg" width="100%" alt="" class="small-img">
+                </div>
+
+                <div class="small-image-col">
+                    <img src="img/products/f3.jpg" width="100%" alt="" class="small-img">
+                </div>
+
+                <div class="small-image-col">
+                    <img src="img/products/f4.jpg" width="100%" alt="" class="small-img">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="single-pro-details">
+            <h6>Home / T-shirt</h6>
+            <h4>Men's Fashion T-Shirt</h4>
+            <h2>$139</h2>
+            <select>
+                <option>Select Size</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XXL</option>
+                <option>XXXL</option>
+            </select>
+            <input value="1">
+            <button class="normal">Add To Cart</button>
+            <h4>Product Details</h4>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur distinctio non optio consectetur
+                sunt quidem, tenetur iure soluta fuga reiciendis assumenda velit sapiente quos libero! Nihil, laboriosam
+                magnam. Quae, deserunt aspernatur. Iusto, velit! Libero, facilis amet. A expedita minus
+                praesentium.</span>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>Some Collection New Modern Design</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="img/products/f1.jpg">
+                <div class="discription">
+                    <span>adidas</span>
+                    <h5>Cartoon Astranaut T-Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/f2.jpg">
+                <div class="discription">
+                    <span>adidas</span>
+                    <h5>Cartoon Astranaut T-Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/f3.jpg">
+                <div class="discription">
+                    <span>adidas</span>
+                    <h5>Cartoon Astranaut T-Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/f4.jpg">
+                <div class="discription">
+                    <span>adidas</span>
+                    <h5>Cartoon Astranaut T-Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+        </div>
+    </section>
+
     <section id="newsletter" class="section-p1 section-m1">
         <div class="newstext">
             <h4>Sign up for NewsLetters</h4>
@@ -116,6 +230,26 @@
             if (nav.style.right == "0px") {
                 nav.style.right = "-300px";
             }
+        }
+
+
+        var MainImg = document.getElementById("MainImg");
+        var small = document.getElementsByClassName("small-img");
+
+        small[0].onclick = function () {
+            MainImg.src = small[0].src;
+        }
+
+        small[1].onclick = function () {
+            MainImg.src = small[1].src;
+        }
+
+        small[2].onclick = function () {
+            MainImg.src = small[2].src;
+        }
+
+        small[3].onclick = function () {
+            MainImg.src = small[3].src;
         }
     </script>
 
