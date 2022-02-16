@@ -183,6 +183,10 @@ body {
     color: #088178;
 }
 
+#hero p{
+    color: black;
+}
+
 #feature {
     display: flex;
     align-items: center;
@@ -646,6 +650,12 @@ footer .copyright {
 
 #prodetails .single-pro-details span{
     line-height: 35px;
+}
+
+/* Blog Page */
+
+#page-header.blog-header{
+    background-image: url('img/banner/b19.jpg');
 }
 
 /* Media Query for responsivenes for Tablets*/
