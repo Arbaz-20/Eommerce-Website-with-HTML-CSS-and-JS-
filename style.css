@@ -682,6 +682,37 @@ footer .copyright {
     height: 300px;
     object-fit: cover;
 }
+
+#blog .blog-details{
+    width: 50%;
+    
+}
+
+#blog .blog-details  a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: 700;
+    
+}
+
+#blog .blog-details a:hover{
+    color: #088178;
+}
+
+.blog-box{
+    position: relative;
+}
+
+#blog .blog-box h1{
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-size: 70px;
+    font-weight: 700;
+    color: grey;
+    z-index: -15;
+}
 /* Media Query for responsivenes for Tablets*/
 
 @media only screen and (max-width:830px) {
