@@ -713,6 +713,11 @@ footer .copyright {
     color: grey;
     z-index: -15;
 }
+
+#blog .blog-box{
+    padding-bottom: 90px;
+}
+
 /* Media Query for responsivenes for Tablets*/
 
 @media only screen and (max-width:830px) {
@@ -839,6 +844,33 @@ footer .copyright {
     }
     #prodetails .single-pro-details{
         width: 100%;
+    }
+
+    /* Blog Page */
+    #blog .blog-box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    #blog{
+        padding: 12px;
+    }
+    #blog .blog-img{
+        width: 100%;
+    }
+    #blog .blog-details{
+        width: 100%;
+    }
+    #blog .image{
+        padding-top: 45px;
+    }
+
+    .blog-box .date{
+        padding-top: 50px;
+    }
+
+    #blog .blog-box .blog-img{
+        margin: 0;
     }
 
 }
