@@ -918,6 +918,12 @@ font-size: 12px;
     width: 150px;
     text-align: center;
 }
+
+#cart table td{
+    padding-top: 15px;
+    
+}
+
 #cart table td:nth-child(3){
     width: 250px;
     text-align: center;
@@ -935,11 +941,67 @@ font-size: 12px;
     padding: 10px 5px 10px 15px;
 }
 
-#cart table thead{
-    border: 1px solid #e2e9e1;
+#cart table thead tr td{
+    border: 1px solid grey;
     border-left: none;
     border-right: none;
 }
+
+#cart table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+
+#cart table tbody tr td{
+    padding-top: 15px;
+}
+
+#cart table tbody td{
+    font-size: 13px;
+    color: black;
+}
+
+#cart table tbody tr td a i{
+    cursor: pointer;
+}
+
+#cart-add button{
+    color: white;
+    background-color: #088178;
+    padding: 12px 20px;
+}
+
+#cart-add{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#coupon{
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+#coupon h3{
+    padding-bottom: 15px;
+}
+#coupon input{
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid grey;
+}
+
+
+#subtotal{
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid white;
+}
+
 /* Media Query for responsivenes for Tablets*/
 
 @media only screen and (max-width:830px) {
