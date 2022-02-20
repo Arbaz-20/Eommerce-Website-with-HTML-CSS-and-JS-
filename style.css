@@ -897,6 +897,13 @@ font-size: 12px;
     border: 1px solid #e1e1e1;
 }
 
+/* Cart page */
+#page-header{
+    background-image: url("img/");
+}
+
+
+
 /* Media Query for responsivenes for Tablets*/
 
 @media only screen and (max-width:830px) {
