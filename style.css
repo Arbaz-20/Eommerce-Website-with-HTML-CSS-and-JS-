@@ -999,9 +999,32 @@ font-size: 12px;
 #subtotal{
     width: 50%;
     margin-bottom: 30px;
-    border: 1px solid white;
+    border: 1px solid grey ; padding: 30px ;
 }
 
+#subtotal table {
+
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#subtotal h3{
+    padding-bottom: 15px;
+}
+
+#subtotal table td{
+    width: 50%;
+    border: 1px solid grey;
+    padding: 10px;
+    font-size: 13px;
+}
+
+#subtotal button{
+    background-color: #088178;
+    color: #fff;
+    padding: 12px 20px;
+}
 /* Media Query for responsivenes for Tablets*/
 
 @media only screen and (max-width:830px) {
@@ -1236,5 +1259,30 @@ font-size: 12px;
     #form-details form{
         width: 100%;
         margin-bottom: 20px;
+    }
+
+
+    /* Cart page */
+
+    #cart{
+        overflow-x: auto;
+    }
+
+    #cart table thead tr td{
+        align-items: center;
+        padding: 25px 20px;
+    }
+
+    #cart-add{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #coupon{
+        width: 100%;
+    }
+    #subtotal{
+        width: 100%;
+        padding: 20px;
     }
 }
